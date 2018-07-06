@@ -20,6 +20,7 @@ cache:
   - $HOME/Library/Caches/Homebrew
 
 install:
+- set -e
 - python -m pip.__main__ install cython tox
 
 # build libyaml
@@ -32,6 +33,7 @@ install:
 - make test-all
 - sudo make install
 - popd
+- set +e
 
 before_script:
 - sudo ldconfig
