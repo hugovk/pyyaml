@@ -53,7 +53,7 @@ script:
 .mixtures:
 - &osx_python
   name: macOS 10.13 with xcode 10.1
-  if: type IN (api, cron) OR tag IS present
+#  if: type IN (api, cron) OR tag IS present
   os: osx
   osx_image: xcode10.1
   language: generic
